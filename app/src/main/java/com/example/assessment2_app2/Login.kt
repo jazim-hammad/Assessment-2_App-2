@@ -9,6 +9,7 @@ import kotlinx.android.synthetic.main.activity_login.*
 class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide() //Disables the bar at the top of the app.
         setContentView(R.layout.activity_login)
     }
     fun savebutton(view: View){
