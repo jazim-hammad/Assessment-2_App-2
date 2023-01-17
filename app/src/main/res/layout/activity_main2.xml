@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:tileMode="repeat"
+    tools:context=".MainActivity2">
+
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="251dp"
+      android:layout_height="58dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="80dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/title" />
+
+  <ImageView
+      android:id="@+id/imageView5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="7dp"
+      android:layout_marginBottom="10dp"
+      app:layout_constraintBottom_toTopOf="@+id/card1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:srcCompat="@drawable/seperator1" />
+
+  <ImageButton
+      android:id="@+id/card1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="145dp"
+      android:backgroundTint="#00FFFFFF"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/card1" />
+
+  <ImageButton
+      android:id="@+id/card2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#00FFFFFF"
+      app:layout_constraintStart_toStartOf="@+id/card1"
+      app:layout_constraintTop_toBottomOf="@+id/card1"
+      app:srcCompat="@drawable/card2" />
+
+  <ImageButton
+      android:id="@+id/card3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#00FFFFFF"
+      app:layout_constraintStart_toStartOf="@+id/card2"
+      app:layout_constraintTop_toBottomOf="@+id/card2"
+      app:srcCompat="@drawable/card3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

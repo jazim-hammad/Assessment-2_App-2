@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mechanics 4 U</string>
+    <string name="title_activity_location2">location2</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="login">Login</string>
+</resources>
