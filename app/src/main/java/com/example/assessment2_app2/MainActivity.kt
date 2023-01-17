@@ -3,6 +3,7 @@ package com.example.assessment2_app2
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +19,14 @@ class MainActivity : AppCompatActivity() {
         findGarage.setOnClickListener(){
             val intent= Intent(this, MainActivity2::class.java)
             startActivity(intent)
+        }
+        // Code for the popup on click of the book button,.
+        info.setOnClickListener{
+            popup.visibility = View.VISIBLE
+        }
+        // code to close the popup tab.
+        popup.setOnClickListener{
+            popup.visibility = View.INVISIBLE
         }
     }
 }
